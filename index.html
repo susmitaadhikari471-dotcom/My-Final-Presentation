@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Susmita Adhikari | Portfolio</title>
+    <title>Susmita Adhikari | Portfolio & Family Tribute</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,10 +11,11 @@
     <!-- Header & Navigation -->
     <header>
         <nav class="navbar">
-            <div class="logo">Susmita.dev</div>
+            <div class="logo">✨ Susmita.dev</div>
             <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#family">My Family</a></li>
+                <li><a href="#portfolio">Projects</a></li>
                 <li><a href="#hobbies">Hobbies</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -22,48 +23,82 @@
         </nav>
     </header>
 
-    <!-- Hero Section -->
+    <!-- Hero Section with Background Photo Option -->
     <section class="hero">
-        <h1>Hi, I'm <span class="highlight">Susmita Adhikari</span> 👋</h1>
-        <p>Computer Engineering Student at Seoul Theological University</p>
-        <a href="#portfolio" class="btn">Explore My Work</a>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="section">
-        <h2>About Me</h2>
-        <p>I am passionate about building web applications using HTML, CSS, and JavaScript. I love exploring new tech and creative designs!</p>
-        
-        <!-- D-Day Counter Widget -->
-        <div class="dday-card">
-            <h3>⏳ Countdown to My Next Big Goal</h3>
-            <div id="countdown">Calculating...</div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <!-- Tapaile aafno profile photo yeta halna saknu hunchha -->
+            <img src="your-profile.jpg" alt="Susmita Adhikari" class="profile-img">
+            <h1>Hi, I'm <span class="highlight">Susmita Adhikari</span> 👋</h1>
+            <p>Computer Engineering Undergraduate Student at Seoul Theological University</p>
+            <p class="tagline">"Building code by day, exploring new adventures and K-dramas by night."</p>
+            <a href="#about" class="btn">Discover More</a>
         </div>
     </section>
 
-    <!-- Portfolio Section -->
+    <!-- About Me Section -->
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <div class="about-container">
+            <p>Hello! I am a dedicated computer engineering student passionate about learning web development (HTML, CSS, JavaScript) and turning creative concepts into reality. I love challenging myself every day.</p>
+            
+            <!-- D-Day Counter Widget -->
+            <div class="dday-card">
+                <h3>⏳ Countdown to My Graduation Goal</h3>
+                <div id="countdown">Calculating...</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Family Section (New & Unique) -->
+    <section id="family" class="section alt-bg">
+        <h2>My Beloved Family ❤️</h2>
+        <p class="section-desc">My greatest source of inspiration, strength, and endless support.</p>
+        <div class="family-grid">
+            <!-- Family Card 1 -->
+            <div class="family-card">
+                <img src="family-photo1.jpg" alt="Family Photo">
+                <h3>Family Gathering</h3>
+                <p>Cherished moments filled with love and laughter together.</p>
+            </div>
+            <!-- Yeta aaru family member ko photo ya extra card thapna milcha -->
+        </div>
+    </section>
+
+    <!-- Portfolio / Project Section -->
     <section id="portfolio" class="section">
-        <h2>Featured Project</h2>
-        <div class="project-card">
-            <h3>Queen of Tears Fan Tribute Page</h3>
-            <p>A web project inspired by my favorite K-drama, featuring responsive layouts and modern CSS styling.</p>
+        <h2>Featured Web Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>Queen of Tears Fan Tribute</h3>
+                <p>An interactive web layout inspired by my favorite K-drama, styled with modern CSS features.</p>
+            </div>
+            <div class="project-card">
+                <h3>Personal Portfolio Hub</h3>
+                <p>A responsive website built using semantic HTML5, advanced Flexbox, and JavaScript logic.</p>
+            </div>
         </div>
     </section>
 
     <!-- Hobbies Section -->
-    <section id="hobbies" class="section">
-        <h2>My Hobbies</h2>
+    <section id="hobbies" class="section alt-bg">
+        <h2>My Hobbies & Interests</h2>
         <div class="hobby-grid">
             <div class="hobby-item">🏔️ Hiking & Trekking</div>
             <div class="hobby-item">📺 Watching K-Dramas (Queen of Tears)</div>
             <div class="hobby-item">🎵 Listening to Music</div>
+            <div class="hobby-item">🗺️ Exploring New Areas</div>
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Footer / Contact -->
     <footer id="contact">
-        <p>Contact: susmita@example.com | Phone: +82-10-0000-0000</p>
-        <p>&copy; 2026 Susmita Adhikari. All rights reserved.</p>
+        <div class="footer-content">
+            <h3>Get in Touch</h3>
+            <p>Email: susmita@example.com | Phone: +82-10-0000-0000</p>
+            <p>Seoul Theological University, Computer Engineering (ID: 2026300917)</p>
+            <p class="copy">&copy; 2026 Susmita Adhikari. All rights reserved.</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
