@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Susmita Adhikari | Portfolio & Family Tribute</title>
+    <title>Susmita Adhikari | Portfolio & Hometown Adventures</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,6 +15,7 @@
             <ul class="nav-links">
                 <li><a href="#about">About Me</a></li>
                 <li><a href="#family">My Family</a></li>
+                <li><a href="#hometown">My Hometown</a></li>
                 <li><a href="#portfolio">Projects</a></li>
                 <li><a href="#hobbies">Hobbies</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -23,16 +24,15 @@
         </nav>
     </header>
 
-    <!-- Hero Section with Background Photo Option -->
+    <!-- Hero Section with Background Photo -->
     <section class="hero">
         <div class="hero-overlay"></div>
         <div class="hero-content">
-            <!-- Tapaile aafno profile photo yeta halna saknu hunchha -->
             <img src="your-profile.jpg" alt="Susmita Adhikari" class="profile-img">
             <h1>Hi, I'm <span class="highlight">Susmita Adhikari</span> 👋</h1>
-            <p>Computer Engineering Undergraduate Student at Seoul Theological University</p>
-            <p class="tagline">"Building code by day, exploring new adventures and K-dramas by night."</p>
-            <a href="#about" class="btn">Discover More</a>
+            <p>Computer Engineering Undergraduate Student at Seoul Theological University (ID: 2026300917)</p>
+            <p class="tagline">"Building code by day, seeking adrenaline and K-drama stories by night."</p>
+            <a href="#about" class="btn">Explore My World</a>
         </div>
     </section>
 
@@ -40,40 +40,81 @@
     <section id="about" class="section">
         <h2>About Me</h2>
         <div class="about-container">
-            <p>Hello! I am a dedicated computer engineering student passionate about learning web development (HTML, CSS, JavaScript) and turning creative concepts into reality. I love challenging myself every day.</p>
+            <p>Hello! I am a passionate computer engineering student based in Seoul, originally from the beautiful landscapes of Nepal. I love web development, exploring new tech, and embracing thrilling adventures!</p>
             
             <!-- D-Day Counter Widget -->
             <div class="dday-card">
-                <h3>⏳ Countdown to My Graduation Goal</h3>
+                <h3>⏳ Countdown to Graduation Goal</h3>
                 <div id="countdown">Calculating...</div>
             </div>
         </div>
     </section>
 
-    <!-- Family Section (New & Unique) -->
+    <!-- Family Section (3 Photos) -->
     <section id="family" class="section alt-bg">
         <h2>My Beloved Family ❤️</h2>
-        <p class="section-desc">My greatest source of inspiration, strength, and endless support.</p>
-        <div class="family-grid">
-            <!-- Family Card 1 -->
-            <div class="family-card">
-                <img src="family-photo1.jpg" alt="Family Photo">
-                <h3>Family Gathering</h3>
-                <p>Cherished moments filled with love and laughter together.</p>
+        <p class="section-desc">My greatest source of strength, love, and constant inspiration.</p>
+        <div class="grid-3">
+            <div class="card">
+                <img src="family-photo1.jpg" alt="Family Moment 1">
+                <h3>Warm Gatherings</h3>
+                <p>Cherished moments filled with laughter and love together.</p>
             </div>
-            <!-- Yeta aaru family member ko photo ya extra card thapna milcha -->
+            <div class="card">
+                <img src="family-photo2.jpg" alt="Family Moment 2">
+                <h3>Support & Strength</h3>
+                <p>The pillars of my life who encourage me every single day.</p>
+            </div>
+            <div class="card">
+                <img src="family-photo3.jpg" alt="Family Moment 3">
+                <h3>Happy Memories</h3>
+                <p>Unforgettable times creating beautiful memories as a family.</p>
+            </div>
         </div>
     </section>
 
-    <!-- Portfolio / Project Section -->
-    <section id="portfolio" class="section">
+    <!-- Hometown & Bungee Jumping Section (Parbat, Nepal) -->
+    <section id="hometown" class="section">
+        <h2>My Hometown: Parbat, Nepal 🏔️</h2>
+        <p class="section-desc">Proudly coming from Parbat, home to Asia's highest and the world's 2nd tallest bungee swing/jump!</p>
+        
+        <div class="hometown-story">
+            <p>Parbat is blessed with breathtaking natural beauty, dramatic canyons, and extreme adventure spots. One of its proudest claims is hosting the world-famous bungee jump over the deep Kali Gandaki gorge. I have challenged myself and successfully completed the bungee jump **2 times**!</p>
+        </div>
+
+        <!-- Bungee Media Grid: 1 Video & 2 Photos -->
+        <div class="grid-3 bungee-media">
+            <div class="card">
+                <!-- Video placeholder or embedded video -->
+                <video controls class="media-box">
+                    <source src="bungee-video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <h3>My Bungee Leap</h3>
+                <p>The thrilling moment of free fall in Parbat!</p>
+            </div>
+            <div class="card">
+                <img src="bungee-photo1.jpg" alt="Bungee Photo 1" class="media-box">
+                <h3>First Leap Experience</h3>
+                <p>Standing on the edge and overcoming my fears.</p>
+            </div>
+            <div class="card">
+                <img src="bungee-photo2.jpg" alt="Bungee Photo 2" class="media-box">
+                <h3>Second Time Thrill</h3>
+                <p>Enjoying the adrenaline rush for the 2nd time!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section alt-bg">
         <h2>Featured Web Projects</h2>
-        <div class="project-grid">
-            <div class="project-card">
+        <div class="grid-2">
+            <div class="card">
                 <h3>Queen of Tears Fan Tribute</h3>
                 <p>An interactive web layout inspired by my favorite K-drama, styled with modern CSS features.</p>
             </div>
-            <div class="project-card">
+            <div class="card">
                 <h3>Personal Portfolio Hub</h3>
                 <p>A responsive website built using semantic HTML5, advanced Flexbox, and JavaScript logic.</p>
             </div>
@@ -81,7 +122,7 @@
     </section>
 
     <!-- Hobbies Section -->
-    <section id="hobbies" class="section alt-bg">
+    <section id="hobbies" class="section">
         <h2>My Hobbies & Interests</h2>
         <div class="hobby-grid">
             <div class="hobby-item">🏔️ Hiking & Trekking</div>
@@ -95,12 +136,4 @@
     <footer id="contact">
         <div class="footer-content">
             <h3>Get in Touch</h3>
-            <p>Email: susmita@example.com | Phone: +82-10-0000-0000</p>
-            <p>Seoul Theological University, Computer Engineering (ID: 2026300917)</p>
-            <p class="copy">&copy; 2026 Susmita Adhikari. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
-</html>
+            <p>Email: susmita@example.com | Phone: +82-10-0000-
