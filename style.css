@@ -34,7 +34,7 @@ body {
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 25px;
+    gap: 20px;
 }
 
 .nav-links a {
@@ -57,11 +57,10 @@ body {
     font-weight: 500;
 }
 
-/* Hero Section with Background Photo Support */
+/* Hero Section with Background Photo */
 .hero {
     position: relative;
     height: 90vh;
-    /* Tapaile aafno background image ko path 'your-bg.jpg' ko thau ma rakhna saknu hunchha */
     background: url('your-bg.jpg') no-repeat center center/cover;
     display: flex;
     align-items: center;
@@ -76,13 +75,13 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(15, 23, 42, 0.65); /* Dark overlay to make text clear */
+    background: rgba(15, 23, 42, 0.7);
 }
 
 .hero-content {
     position: relative;
     z-index: 2;
-    max-width: 700px;
+    max-width: 750px;
     padding: 0 20px;
 }
 
@@ -134,7 +133,7 @@ body {
 /* Sections */
 .section {
     padding: 80px 20px;
-    max-width: 1000px;
+    max-width: 1100px;
     margin: 0 auto;
     text-align: center;
 }
@@ -155,17 +154,24 @@ body {
     margin-bottom: 40px;
 }
 
-/* Family Grid */
-.family-grid {
+/* Grid Layouts */
+.grid-3 {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.grid-2 {
     display: flex;
     justify-content: center;
     gap: 30px;
     flex-wrap: wrap;
 }
 
-.family-card {
+.card {
     background: white;
-    width: 300px;
+    width: 330px;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 12px rgba(0,0,0,0.06);
@@ -173,25 +179,39 @@ body {
     padding-bottom: 20px;
 }
 
-.family-card img {
+.card img, .card video {
     width: 100%;
     height: 200px;
     object-fit: cover;
 }
 
-.family-card h3, .family-card p {
+.card h3, .card p {
     padding: 0 15px;
 }
 
-.family-card h3 {
+.card h3 {
     margin-top: 15px;
     font-size: 1.2rem;
 }
 
-.family-card p {
+.card p {
     font-size: 0.95rem;
     color: #64748b;
     margin-top: 5px;
+}
+
+/* Hometown Story */
+.hometown-story {
+    max-width: 800px;
+    margin: 0 auto 35px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    font-size: 1.1rem;
+    color: #334155;
+    line-height: 1.6;
+    text-align: center;
 }
 
 /* D-Day Card */
@@ -212,24 +232,7 @@ body {
     margin-top: 10px;
 }
 
-/* Project & Hobby Grids */
-.project-grid {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    margin-top: 30px;
-}
-
-.project-card {
-    background: white;
-    padding: 25px;
-    width: 350px;
-    border-radius: 8px;
-    text-align: left;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-}
-
+/* Hobby Grid */
 .hobby-grid {
     display: flex;
     justify-content: center;
@@ -273,10 +276,10 @@ body.dark-mode {
 }
 
 body.dark-mode .navbar,
-body.dark-mode .family-card,
+body.dark-mode .card,
 body.dark-mode .dday-card,
-body.dark-mode .project-card,
-body.dark-mode .hobby-item {
+body.dark-mode .hobby-item,
+body.dark-mode .hometown-story {
     background-color: #1e293b;
     color: #f1f5f9;
 }
@@ -285,9 +288,9 @@ body.dark-mode .alt-bg {
     background-color: #0f172a;
 }
 
-body.dark-mode .family-card p,
+body.dark-mode .card p,
 body.dark-mode .section-desc,
-body.dark-mode .project-card p {
+body.dark-mode .hometown-story {
     color: #94a3b8;
 }
 
