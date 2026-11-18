@@ -13,7 +13,7 @@ body {
     transition: background-color 0.3s, color 0.3s;
 }
 
-/* Dark Mode Support */
+/* Dark Mode */
 body.dark-mode {
     background-color: #0f172a;
     color: #f1f5f9;
@@ -133,7 +133,7 @@ body.dark-mode .nav-links a {
 
 /* Sections */
 .section {
-    padding: 60px 8%;
+    padding: 60px 6%;
     text-align: center;
 }
 
@@ -182,23 +182,57 @@ body.dark-mode .section-desc {
     margin-top: 8px;
 }
 
-/* Grids & Cards */
+/* Photo & Video Ko Size Anusar Compact Cards */
 .grid-3 {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 24px;
-    align-items: start;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 28px;
+    align-items: stretch;
 }
 
+.grid-3 .card {
+    width: 260px;
+    background: #ffffff;
+    padding: 12px;
+    border-radius: 16px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.25s;
+}
+
+.grid-3 .card img,
+.grid-3 .card video,
+.media-box {
+    width: 100%;
+    height: 360px;
+    border-radius: 12px;
+    display: block;
+    margin-bottom: 12px;
+    object-fit: cover;
+    object-position: top center;
+}
+
+.grid-3 .card video {
+    object-fit: contain;
+    background-color: #000;
+}
+
+/* Project Cards */
 .grid-2 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 24px;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
-.card {
+.grid-2 .card {
     background: #ffffff;
-    padding: 18px;
+    padding: 22px;
     border-radius: 14px;
     box-shadow: 0 4px 14px rgba(0, 0, 0, 0.07);
     text-align: center;
@@ -206,24 +240,21 @@ body.dark-mode .section-desc {
 }
 
 .card:hover {
-    transform: translateY(-4px);
-}
-
-/* Photo & Video Fix - No Cropping & No Huge Black Box */
-.media-box {
-    width: auto;
-    max-width: 100%;
-    height: auto;
-    max-height: 380px;
-    border-radius: 10px;
-    display: block;
-    margin: 0 auto 14px auto;
-    object-fit: contain;
+    transform: translateY(-5px);
 }
 
 .card h3 {
-    margin-bottom: 8px;
-    font-size: 1.2rem;
+    margin-bottom: 6px;
+    font-size: 1.15rem;
+}
+
+.card p {
+    font-size: 0.92rem;
+    color: #64748b;
+}
+
+body.dark-mode .card p {
+    color: #cbd5e1;
 }
 
 .hometown-story {
@@ -266,12 +297,15 @@ footer p {
     margin: 4px 0;
 }
 
-/* Mobile Responsive */
 @media (max-width: 768px) {
     .nav-links {
         display: none;
     }
     .hero h1 {
         font-size: 1.8rem;
+    }
+    .grid-3 .card {
+        width: 90%;
+        max-width: 300px;
     }
 }
